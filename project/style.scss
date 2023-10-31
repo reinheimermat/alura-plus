@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$branco-principal: #fff;
+$cinza-secundario: #c0c0c0;
+$botao-azul: #167bf7;
+$cor-de-fundo: #00030c;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $cor-de-fundo;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.principal {
+    background-image: url('./assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container__botao {
+    background-color: $botao-azul;
+    border-radius: 8px;
+    padding: 1rem;
+    text-decoration: none;
+    color: $branco-principal;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#secundario__botao {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+#outline {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.container__imagem {
+    margin: 1rem 0 2rem 0;
+}
+
+.container__caixa {
+    margin: 0 6rem;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.container__descricao {
+    padding: 2rem;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+    line-height: 120%;
+}
+
+.descricao__texto {
+    color: $cinza-secundario;
+    line-height: 150%;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.dispositivos__titulo {
+    padding-bottom: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+footer {
+    text-align: center;
+    padding: 10rem 7.5rem 6rem 7.5rem;
+}
+
+.rodape__imagem {
+    padding-bottom: 2.5rem;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style: none;
+
+    a {
+        color: $branco-principal;
+        text-decoration: none;
+        padding-right: 1rem;
+    }
+}
+
+.rodape__texto {
+    padding-top: 2rem;
+    color: $cinza-secundario;
+    font-size: 0.85rem;
+}
